@@ -1,110 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	<title>Auto Servis Programme</title>
 
 	<style>
-		body {
+		body{
 			padding: 20px;
 		}
 	</style>
 </head>
-
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand text-danger" href="#">Önemli Oto Servisi</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ms-auto">
-					<a class="nav-link" href="./about.html" >Hakkımızda</a>
-					<a class="nav-link" href="./index.html">Kayıt</a>
-					<a class="nav-link active" aria-current="page" href="./invoce.html">Fatura</a>
-					<a class="nav-link" href="./customer.html">Müşteri Bilgileri</a>
-					<a class="nav-link" href="#">Yazdır</a>
-				</div>
-			</div>
+		  <a class="navbar-brand text-danger" href="#">Önemli Oto Servisi</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav ms-auto">
+		      <a class="nav-link" href="./about.html" >Hakkımızda</a>
+		      <a class="nav-link active" aria-current="page" href="./index.html">Kayıt</a>
+		      <a class="nav-link" href="./invoce.html">Fatura</a>
+		      <a class="nav-link" href="./customer.html">Müşteri Bilgileri</a>
+		      <a class="nav-link" href="#">Yazdır</a>
+		    </div>
+		  </div>
 		</div>
-	</nav>
-	<br>
-	<form class="row g-3 needs-validation" novalidate>
-		<div class="row">
-			<div class="col-md-3">
-				<label for="validationCustom01" class="form-label">Adı Soyadı</label>
-				<input type="text" class="form-control" id="validationCustom01" placeholder="Adı Soyadı" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom02" class="form-label">Cep Tel</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="0 555 555 55 55" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom03" class="form-label">Adres</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="Adres" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom04" class="form-label">Tarih</label>
-				<input type="date" class="form-control" id="validationCustom02" placeholder="Tarih" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<label for="validationCustom05" class="form-label">Marka</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="Marka" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom06" class="form-label">Model</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="Model" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom07" class="form-label">Plaka</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="Plaka" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-
-			<div class="col-md-3">
-				<label for="validationCustom08" class="form-label">Kilometre</label>
-				<input type="text" class="form-control" id="validationCustom02" placeholder="Kilometre" required>
-				<div class="valid-feedback">
-					Looks good!
-				</div>
-			</div>
-		</div>
-		<!-- table starts -->
-		<br>
+	      </nav>
+				<br>
+	      <div class="row">
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Adı Soyadı">
+						<label for="floatingInput">Adı Soyadı</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Cep Tel">
+						<label for="floatingInput">Cep Tel</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Adres">
+						<label for="floatingInput">Adres</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="date" class="form-control" id="floatingInput" placeholder="Tarih">
+						<label for="floatingInput">Tarih</label>
+					</div>
+	      </div>
+	      <div class="row">
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Marka">
+						<label for="floatingInput">Marka</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Model">
+						<label for="floatingInput">Model</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Plaka">
+						<label for="floatingInput">Plaka</label>
+					</div>
+					<div class="col form-floating mb-3">
+						<input type="text" class="form-control" id="floatingInput" placeholder="Kilometre">
+						<label for="floatingInput">Kilometre</label>
+					</div>
+	      </div>
+	      <br>
+<!-- table starts -->
 				<div class="table-responsive">
 				<table class="table table-striped table-bordered">
 					<thead>
@@ -203,31 +168,11 @@
 				</table>
 			</div>
 
-		<!-- Submit starts -->
-		<div class="col-12">
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-				<label class="form-check-label" for="invalidCheck">
-					İrsaliye için hazır.
-				</label>
-				<div class="invalid-feedback">
-					Onaylamadan önce işaretleyiniz.
-				</div>
-			</div>
-		</div>
-		<div class="col-12">
-			<button class="btn btn-primary" type="submit">Onay</button>
-		</div>
-		</div>
-	</form>
+
+
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-		integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-		integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
-
 </html>
